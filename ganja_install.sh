@@ -2,15 +2,15 @@
 
 TMP_FOLDER=$(mktemp -d)
 CONFIG_FILE='Ganjaproject.conf'
-CONFIGFOLDER='/root/.Ganjaproject'
+CONFIGFOLDER='/root/.Ganjaproject2'
 COIN_DAEMON='ganjacoind'
 COIN_CLI='ganjacoind'
 COIN_PATH='/usr/local/bin/'
-COIN_TGZ='https://github.com/zoldur/Ganja/releases/download/v1.0.0.4/ganjacoin.tar.gz'
+COIN_TGZ='https://github.com/zoldur/Ganja/releases/download/v1.0.0.7/ganjacoin.tar.gz'
 COIN_ZIP=$(echo $COIN_TGZ | awk -F'/' '{print $NF}')
 COIN_NAME='Ganja'
-COIN_PORT=11419
-RPC_PORT=11420
+COIN_PORT=12419
+RPC_PORT=12420
 
 
 NODEIP=$(curl -s4 api.ipify.org)
